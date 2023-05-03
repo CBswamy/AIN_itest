@@ -1,0 +1,36 @@
+xml type="schema" version="2.8.0">
+	<requestvalidationxml documents="active" scanlevel="1">
+		<partdocument>
+			<InCAD addinguid="{4E5B55CA-564E-472F-8310-04F21EFC1399}" />
+		</partdocument>
+		<assemblydocument/>
+		<drawingdocument/>
+		<presentationdocument/>
+	</requestvalidationxml>
+	<executablexml/>
+	<filterxml/>
+	<validationxml>
+		<item compare="allnodes" ignorewhitespace="true" location="/validationxml/document/InCAD/InCADTreeData" />
+		<item compare="allnodes" ignorewhitespace="true" location="/validationxml/document/InCAD/NastranFile" />
+		<item matchnode="@name" compare="allnodes" ignorewhitespace="true" formula="percentdiff" tolerance="0.03" location="/validationxml/document/InCAD/Results" />
+		<item matchnode="@name" compare="allnodes" ignorewhitespace="true" formula="percentdiff" tolerance="0.10" location="/validationxml/document/InCAD/PerformanceMetrics" />
+	</validationxml>
+	<regularexpressions/>
+	<schemavariables/>
+	<environmentvariables/>
+	<registrykeys/>
+	<capturedialog interval="500" version="1.5.1306" useRegex="false">
+		<actions ignore="true">
+			<caption>*Autodesk Inventor Nastran*</caption>
+			<button>OK</button>
+			<text>*Solution Complete.</text>
+			<tag />
+		</actions>
+		<actions ignore="true">
+			<caption>*Autodesk Inventor Nastran*</caption>
+			<button>OK</button>
+			<text>The adding of this Idealization to Analysis*</text>
+			<tag />
+		</actions>
+	</capturedialog>
+</xml>
